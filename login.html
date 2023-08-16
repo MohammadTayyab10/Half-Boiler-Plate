@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+
+    <style>
+        
+        body {
+            background-color: #fff;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: xx-large;
+            margin-top: 50px;
+        }
+
+        span {
+            color: gray;
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: orange;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .inp {
+            width: 400px;
+            height: 40px;
+            border-radius: 7px;
+            border: none;
+            border: 1px solid rgb(214, 214, 214);
+            margin-top: -22px;
+        }
+
+        .btn {
+            width: 400px;
+            height: 50px;
+            margin-top: 20px;
+            background-color: orangered;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        #p {
+            margin-right: 310px;
+            margin-top: 40px;
+            color: rgb(66, 66, 66);
+            font-weight: 500;
+            font-size: large;
+        }
+
+        input::placeholder {
+            font-style: italic;
+            color: rgb(180, 180, 180);
+            font-size: 15px;
+        }
+
+        #main {
+            border: 2px solid rgb(244, 243, 243);
+            width: 450px;
+            height: 550px;
+            border-radius: 30px;
+            box-shadow: 3px 6px 10px 3px rgba(164, 149, 149, 0.858);
+            background-color: white;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+
+<script type="module" src="../js/login.js"></script>
+    
+    <center>
+
+        <div id="main">
+
+            <h1>Log In</h1>
+
+            <h1>Sign in to your account</h1>
+
+            <span>Or</span><a href="./signup.html">Create a new one</a><br>
+            
+            <form>
+
+                <p id="p">Email address</p>
+                <input type="text" class="inp" id="email" placeholder="Enter Email" required="required"><br>
+
+                <p id="p">Password</p>
+                <input type="password" class="inp" id="password" placeholder="Enter Password" required="required"><br>
+
+                <button id="btn" class="btn" onclick="add()">Sign In</button><br>
+                <!-- <button class="btn">Sign in as guest</button> -->
+
+            </form>
+
+
+        </div>
+
+
+
+    </center>
+
+
+</body>
+
+
+</html>
